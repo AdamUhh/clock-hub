@@ -37,5 +37,6 @@
 			'Open Sans',
 			'Helvetica Neue',
 			sans-serif;
+			background-color: #121212;
 	}
 </style>
