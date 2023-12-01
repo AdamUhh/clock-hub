@@ -4,5 +4,6 @@ This app features showcases your current time, a stopwatch, a wide range of sele
 
 ![Static image of app](<https://i.imgur.com/KFiZSr5.jpeg>
  "Static Image of app")
+
 ![Showing the features of the app](<https://i.imgur.com/QYekVCD.gif>
  "Showing the features of the app")
