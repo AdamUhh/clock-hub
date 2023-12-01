@@ -1,5 +1,4 @@
 const imageArr = [
-	'',
 	'afternoon.jpg',
 	'tokyo.jpg',
 	'apocalypse.jpg',

@@ -2,8 +2,8 @@
 	import { onMount } from 'svelte';
 	import { imageArr } from '../lib/imageArr';
 
-	let selectedImageIndex = 1;
-	let selectedImageSrc = imageArr[selectedImageIndex];
+	let selectedImageIndex = 0;
+	$: selectedImageSrc = imageArr[selectedImageIndex];
 
 	onMount(() => {
 		const storedValue = localStorage.getItem('clock-hub-saved-image-src-index');
@@ -19,13 +19,14 @@
 	const updateImage = (intiializeImageSrcIndex: number | null = null) => {
 		if (!intiializeImageSrcIndex) {
 			localStorage.setItem('clock-hub-saved-image-src-index', JSON.stringify(selectedImageIndex));
-			selectedImageSrc = imageArr[selectedImageIndex];
-		} else selectedImageSrc = imageArr[intiializeImageSrcIndex];
+		}
+
+		selectedImageIndex = intiializeImageSrcIndex ?? selectedImageIndex;
+		selectedImageSrc = imageArr[selectedImageIndex];
 
 		if (document)
-			document.getElementById('image-container')!.style.backgroundImage = `${
-				selectedImageSrc === 'images/' ? 'none' : `url('${selectedImageSrc}')`
-			}`;
+			document.getElementById('image-container')!.style.backgroundImage =
+				`url('${selectedImageSrc}')`;
 	};
 
 	const handlePreviousClick = () => {
