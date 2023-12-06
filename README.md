@@ -20,5 +20,5 @@ npm run dev
 ### How to push to production
 
 ``` cli
-netlify --prod
+netlify deploy --prod
 ```
