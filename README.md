@@ -7,3 +7,18 @@ This app features showcases your current time, a stopwatch, a wide range of sele
 
 ![Showing the features of the app](<https://i.imgur.com/FsYnvM4.gif>
  "Showing the features of the app")
+
+## How to run
+
+``` cli
+npm i
+npm run dev
+```
+
+## Notes
+
+### How to push to production
+
+``` cli
+netlify --prod
+```
