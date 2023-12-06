@@ -11,6 +11,8 @@
 		name="description"
 		content="A clock app that features world wide clock support and selected wallpapers"
 	/>
+	<meta name="og:image" content="https://i.imgur.com/f4qkt9B.png">
+	<meta name="twitter:image" content="https://i.imgur.com/f4qkt9B.png">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
 </svelte:head>
 
